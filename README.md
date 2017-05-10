@@ -17,7 +17,11 @@ Install pytest:
 $ pip install pytest
 
 ```
+Alternatively, Install nose
+```
+$ pip install nose
 
+```
 ### Using the Code
 
 clone the code from git using this limk:
@@ -30,10 +34,15 @@ python3 wordcount.py
 
 ## Executing the tests included
 
+if you've got pytest
 ```
 $ py.test test_word_count.py
 ```
-Alternatively, if you do not have pytest installed but with to, use:
+If you've got nosetests
+```
+$ nosetests test_word_count.py
+```
+Alternatively, if you do not have either nosetests or pytest installed, use:
 
 ```
 $ python3 test_word_count.py
